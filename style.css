@@ -1,0 +1,415 @@
+@charset "UTF-8";
+/*
+Theme name: AngloNormandy Group
+Author: Arroweb - Claire Bourdalé
+Author URI: https://www.arroweb.net
+Description: Thème AngloNormandy Group
+Version: 1.0
+*/
+/**
+ *
+ * 0 - VARIABLES
+ * 1 - GENERALITES
+ * 2 - HEADER
+ * 3 - SECTIONS
+ * 4 - ABOUT US
+ * 5 - SERVICES
+ * 6 - OUR CLIENTS
+ * 7 - CONTACT
+ * 8 - PAGE INTERNE
+ * XX - MEDIA QUERIES
+ *
+ */
+/**
+ *
+ * 0 - VARIABLES
+ * 
+ */
+/**
+ *
+ * 1 - GENERALITES
+ *
+ */
+body {
+  background-color: #272727;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px; }
+
+h1 {
+  color: #c7a37e; }
+
+a {
+  color: #c7a37e;
+  text-decoration: none; }
+
+a:hover {
+  color: #A77E54; }
+
+.marron {
+  color: #c7a37e; }
+
+.blanc {
+  color: #ffffff; }
+
+.btn {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  background-color: #c7a37e;
+  border-radius: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 40px;
+  font-family: 'Oswald', sans-serif; }
+
+.btn:hover, .btn:focus {
+  background-color: #A77E54;
+  color: white; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.droite {
+  text-align: right; }
+
+/**
+ *
+ * 2 - HEADER
+ *
+ */
+header {
+  display: flex; }
+
+.menu-icones {
+  background-color: #303030;
+  min-width: 100px;
+  height: 100vh; }
+
+.icones {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+
+.icone {
+  margin-bottom: 40px; }
+
+.icone img {
+  opacity: 0.4; }
+
+.icone img:hover {
+  opacity: 1; }
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+/*
+--> Cf front-page.php
+.home{
+	background-image: url('img/background-home.jpg');
+}
+*/
+/*
+--> Cf page-interne.php
+.elite{
+	background-image: url('../img/background-elite2.jpg');
+}
+*/
+.logo-menu {
+  display: flex; }
+
+.logo {
+  padding: 20px 0 0 20px; }
+
+.menu {
+  width: 100%;
+  text-align: right; }
+
+.menu ul {
+  list-style-type: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 20px 20px 0 0; }
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 50px; }
+
+.intro {
+  max-width: 500px;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 30vh; }
+
+.intro h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 1px 1px #000; }
+
+.intro p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 1px 1px #000; }
+
+/**
+ *
+ * 3 - SECTIONS
+ *
+ */
+section {
+  margin-top: 50px;
+  padding: 0 20px 50px 20px; }
+
+section h2 {
+  text-align: center;
+  color: #c7a37e;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0px;
+  padding: 0 0 40px 0; }
+
+/**
+ *
+ * 4 - ABOUT US
+ *
+ */
+.about-us h3 {
+  color: white;
+  margin: 0;
+  padding: 0 0 15px 10px; }
+
+.about-us-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #d7d7d7;
+  line-height: 2rem; }
+
+.col {
+  flex: 1;
+  padding: 0 10px;
+  min-width: 300px;
+  max-width: 500px; }
+
+.col p {
+  margin: 0;
+  padding: 0 0 15px 0; }
+
+/**
+ *
+ * 5 - OUR SERVICES
+ *
+ */
+.our-services {
+  text-align: center; }
+
+.our-services h2 {
+  color: #ffffff; }
+
+.our-services h3 {
+  color: white; }
+
+.our-services p {
+  color: #d7d7d7;
+  line-height: 2rem;
+  padding: 0 5px 15px 5px; }
+
+.our-services-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start; }
+
+.encart {
+  padding: 0 10px 50px 10px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 310px; }
+
+/**
+ *
+ * 6 - OUR CLIENTS
+ *
+ */
+.our-clients h2 {
+  margin-top: -50px; }
+
+.our-clients p {
+  text-align: center;
+  margin: 0;
+  padding: 0 100px 40px 100px;
+  color: #d7d7d7;
+  line-height: 2rem; }
+
+.our-clients-logos {
+  text-align: center; }
+
+.our-clients-logos img {
+  padding: 15px 20px 0 20px;
+  opacity: 0.6;
+  max-height: 50px; }
+
+.our-clients-logos img:hover {
+  opacity: 1; }
+
+.mentions {
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  margin-top: -20px; }
+
+/**
+ *
+ * 7 - CONTACT
+ *
+ */
+.contact-us h2 {
+  color: white; }
+
+.coordonnees {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.col-contact {
+  color: #d7d7d7;
+  line-height: 2rem;
+  text-align: center;
+  padding: 0 20px; }
+
+/**
+ *
+ * 8 - INTERNE
+ *
+ */
+.intro-interne {
+  max-width: 410px;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 0px 20px 10px 20px; }
+
+.intro-interne p {
+  color: white;
+  text-shadow: none; }
+
+ul.post-meta {
+  list-style-type: none;
+  /* color: #E00025; */
+  color: white;
+  text-shadow: 1px 1px #000;
+  font-size: 1.27rem; }
+
+.post-meta-key {
+  display: none; }
+
+.interne-content {
+  padding-left: 100px; }
+
+.interne-content h3 {
+  color: white;
+  margin: 0;
+  padding: 0 0 5px 10px; }
+
+.interne-content h4 {
+  margin: 0;
+  padding: 15px 0 5px 10px;
+  color: #c7a37e; }
+
+.interne-content p {
+  margin: 0;
+  padding: 0 10px 20px 10px;
+  color: #d7d7d7;
+  line-height: 2rem; }
+
+/**
+ *
+ * XX - MEDIA QUERIES
+ *
+ */
+@media (max-width: 640px) {
+  .menu-icones {
+    display: none; }
+
+  .logo {
+    display: none; }
+
+  .menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 5px; }
+
+  .intro {
+    margin-top: 0px;
+    padding-left: 10px; }
+
+  .intro h1 {
+    font-size: 1.8rem; }
+
+  .about-us h3 {
+    text-align: center;
+    padding: 0 0 15px 0; }
+
+  .our-clients p {
+    padding: 0 20px 20px 20px; }
+
+  .our-clients-logos img {
+    padding: 0 8px; } }
+@media (max-height: 550px) {
+  .logo {
+    display: none; }
+
+  .menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 5px; }
+
+  .intro {
+    margin-top: 0px; } }
+@media (max-width: 730px) {
+  .logo-menu {
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+
+  .logo {
+    padding: 10px 20px 0 0; }
+
+  .menu ul {
+    padding: 5px 20px 0 0; }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    line-height: 20px; }
+
+  .interne-content {
+    padding-left: 20px; } }
+@media (min-width: 1315px) {
+  .encart {
+    min-width: 400px;
+    max-width: 450px; } }
+
+/*# sourceMappingURL=style.css.map */
