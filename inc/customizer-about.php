@@ -23,6 +23,10 @@
 			'priority' 		=> 1
 		));
 
+		$wp_customize->selective_refresh->add_partial( 'about_titre1', array(
+	        'selector' => '#front-about-titre1',
+    	) );
+
 		// TITRE 2
 		$wp_customize->add_setting('about_titre2', array(
 			'default' 		=> _x('High impact solutions','anglonormandy'),
@@ -35,6 +39,10 @@
 			'type' 			=> 'text',
 			'priority' 		=> 2
 		));
+
+		$wp_customize->selective_refresh->add_partial( 'about_titre2', array(
+	        'selector' => '#front-about-titre2',
+    	) );
 
 		// COLONNE 1
 		$wp_customize->add_setting('about_colonne1', array(
@@ -50,6 +58,10 @@
 			'priority' 		=> 3
 		));
 
+		$wp_customize->selective_refresh->add_partial( 'about_colonne1', array(
+	        'selector' => '#front-about-colonne1',
+    	) );
+
 		// COLONNE 2
 		$wp_customize->add_setting('about_colonne2', array(
 			'default' 		=> _x('Since our creation long time ago we have offered our clients a large range of specialist experience, from the design and production of traditional promotional tools including digital media to the engineering and delivery of complex public relations operations, world-class sport or culture events tailor-made hospitality, private concerts, etc.','anglonormandy'),
@@ -64,6 +76,10 @@
 			'priority' 		=> 4
 		));
 
+		$wp_customize->selective_refresh->add_partial( 'about_colonne2', array(
+	        'selector' => '#front-about-colonne2',
+    	) );
+
 		// IMAGE
 		$wp_customize->add_setting('about_img', array(
 			'default'		=> get_bloginfo('template_directory').'/img/bateau.jpg',
@@ -76,6 +92,10 @@
 			'settings'		=> 'about_img',
 			'priority'		=> 5
 		)));
+
+		$wp_customize->selective_refresh->add_partial( 'about_img', array(
+	        'selector' => '#front-about-img',
+    	) );
 
 	}
 

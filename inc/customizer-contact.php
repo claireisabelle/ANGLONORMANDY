@@ -102,7 +102,6 @@
 			'priority' 		=> 7
 		));
 
-
 		
 		// LOGO 
 		$wp_customize->add_setting('contact_logo', array(

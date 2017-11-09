@@ -164,6 +164,12 @@ a:hover{
 }
 */
 
+
+.showcase-mentions{
+	width: 100%;
+	height: auto;
+}
+
 .logo-menu{
 	display: flex;
 }
@@ -203,9 +209,8 @@ a:hover{
 
 .intro h1{
 	color: white;
-	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 2rem;
 	text-shadow: 1px 1px #000;
 }
@@ -434,6 +439,16 @@ ul.post-meta{
 	color: $gris;
 	line-height: 2rem;
 }
+
+.interne-content li{
+	color: $gris;
+}
+
+
+.interne-mentions{
+	padding-left: 20px !important;
+}
+
 
 
 

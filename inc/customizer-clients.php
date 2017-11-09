@@ -1,14 +1,24 @@
 <?php
 	function wpb_customize_register_clients($wp_customize){
 
+		// TEXT SOUS SECTION
+		$wp_customize->add_panel('panel1', array(
+            'title' => 'CLIENTS >>>',
+            'priority' => 4,
+            )
+        );
+
 		// ***
 		// CLIENTS
 		// ***
 		$wp_customize->add_section('clients', array(
 			'title'			=> __('CLIENTS', 'anglonormandy'),
 			'description'	=> sprintf(__('Contenu de la rubrique Clients', 'anglonormandy')),
-			'priority'		=> 4
+			'priority'		=> 4,
+			'panel' => 'panel1'
 		));
+
+
 
 		// TITRE
 		$wp_customize->add_setting('clients_titre', array(
@@ -24,18 +34,31 @@
 		));
 
 		// TEXTE
-		$wp_customize->add_setting('clients_texte', array(
-			'default' 		=> _x('Our expertise is enriched by the demanding requirements of clients from the most advanced sectors of the economy – including the energy industry, architectural engineering, luxury goods, finance, pharmaceutical and medical sectors.','anglonormandy'),
-			'type' 		 	=> 'theme_mod'
-		));
 
-		$wp_customize->add_control('clients_texte', array(
-			'label' 		=> __('Texte', 'anglonormandy'),
-			'description'	=> sprintf(__('Utiliser &#60;br /> pour passer à la ligne', 'anglonormandy')),
-			'section' 		=> 'clients',
-			'type' 			=> 'textarea',
-			'priority' 		=> 2
-		));
+
+		
+		$wp_customize->add_setting( 'clients_texte', array(
+            'default' 		=> _x('Our expertise is enriched by the demanding requirements of clients from the most advanced sectors of the economy – including the energy industry, architectural engineering, luxury goods, finance, pharmaceutical and medical sectors.','anglonormandy'),
+            'transport' => 'postMessage',
+            'sanitize_callback' => 'wp_kses_post'
+        ) );
+
+        $wp_customize->add_control( new Text_Editor_Custom_Control( $wp_customize, 'clients_texte', array(
+            'label' => 'Contenu',
+            'section' => 'clients',
+            'settings' => 'clients_texte',
+            'type' => 'textarea',
+            'priority' 		=> 2
+        ) ) );
+
+
+
+
+
+
+
+
+
 
 		// LOGO 1
 		$wp_customize->add_setting('clients_logo1', array(

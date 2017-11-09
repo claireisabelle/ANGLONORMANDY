@@ -4,7 +4,7 @@ Theme name: AngloNormandy Group
 Author: Arroweb - Claire Bourdalé
 Author URI: https://www.arroweb.net
 Description: Thème AngloNormandy Group
-Version: 1.0
+Version: 1.1
 */
 /**
  *
@@ -129,6 +129,10 @@ header {
 	background-image: url('../img/background-elite2.jpg');
 }
 */
+.showcase-mentions {
+  width: 100%;
+  height: auto; }
+
 .logo-menu {
   display: flex; }
 
@@ -161,9 +165,8 @@ header {
 
 .intro h1 {
   color: white;
-  text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2rem;
   text-shadow: 1px 1px #000; }
 
@@ -345,6 +348,12 @@ ul.post-meta {
   padding: 0 10px 20px 10px;
   color: #d7d7d7;
   line-height: 2rem; }
+
+.interne-content li {
+  color: #d7d7d7; }
+
+.interne-mentions {
+  padding-left: 20px !important; }
 
 /**
  *

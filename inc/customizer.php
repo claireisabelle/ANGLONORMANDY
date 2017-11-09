@@ -23,6 +23,10 @@
 			'priority'		=> 1
 		)));
 
+		$wp_customize->selective_refresh->add_partial( 'header_logo', array(
+	        'selector' => '#front-logo',
+    	) );
+
 		// IMG MAIN COVER
 		$wp_customize->add_setting('header_cover', array(
 			'default'		=> get_bloginfo('template_directory').'/img/background-home.jpg',
@@ -36,6 +40,10 @@
 			'priority'		=> 2
 		)));
 
+		$wp_customize->selective_refresh->add_partial( 'header_cover', array(
+	        'selector' => '#front-img',
+    	) );
+
 		// TITRE
 		$wp_customize->add_setting('header_titre', array(
 			'default' 		=> _x('AngloNormandy Group','anglonormandy'),
@@ -48,6 +56,11 @@
 			'type' 			=> 'text',
 			'priority' 		=> 3
 		));
+
+		$wp_customize->selective_refresh->add_partial( 'header_titre', array(
+	        'selector' => '#front-titre',
+    	) );
+
 
 		// TEXTE INTRODUCTION
 		$wp_customize->add_setting('header_introduction', array(
@@ -63,6 +76,11 @@
 			'priority' 		=> 4
 		));
 
+		$wp_customize->selective_refresh->add_partial( 'header_introduction', array(
+	        'selector' => '#front-introduction',
+    	) );
+
+
 		// BOUTON ABOUT US
 		$wp_customize->add_setting('header_btn_texte', array(
 			'default' 		=> _x('About Us','anglonormandy'),
@@ -75,6 +93,10 @@
 			'type' 			=> 'text',
 			'priority' 		=> 5
 		));
+
+		$wp_customize->selective_refresh->add_partial( 'header_btn_texte', array(
+	        'selector' => '#front-btn',
+    	) );
 
 		// TWITTER
 		$wp_customize->add_setting('header_twitter', array(
@@ -89,6 +111,10 @@
 			'priority' 		=> 6
 		));
 
+		$wp_customize->selective_refresh->add_partial( 'header_twitter', array(
+	        'selector' => '#front-twitter',
+    	) );
+
 		// EMAIL
 		$wp_customize->add_setting('header_email', array(
 			'default' 		=> _x('info@anglonormandy.uk','anglonormandy'),
@@ -101,6 +127,11 @@
 			'type' 			=> 'text',
 			'priority' 		=> 7
 		));
+
+		$wp_customize->selective_refresh->add_partial( 'header_email', array(
+	        'selector' => '#front-email',
+    	) );
+
 
 
 	}

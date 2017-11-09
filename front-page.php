@@ -29,7 +29,7 @@
 		<div class="showcase home">
 
 			<div class="logo-menu">
-				<div class="logo"><img src="<?php echo get_theme_mod('header_logo', get_bloginfo('template_url').'/img/logo-anglonormandy.png'); ?>" alt="AngloNormandy Group" title="" /></div>
+				<div id="front-logo" class="logo"><img src="<?php echo get_theme_mod('header_logo', get_bloginfo('template_url').'/img/logo-anglonormandy.png'); ?>" alt="AngloNormandy Group" title="" /></div>
 				<!-- /.logo -->
 
 				<nav class="menu">
@@ -46,10 +46,10 @@
 			</div>
 			<!-- /.logo-menu -->
 
-			<div class="intro">
-				<h1><?php echo get_theme_mod('header_titre', 'AngloNormandy Group'); ?></h1>
-				<p><?php echo get_theme_mod('header_introduction', 'AngloNormandy Group designs and delivers high impact solutions for quality corporate communications and related, derived, recreational activities, as well as strategic analysis & consultancy.'); ?>	</p>
-				<a href="#about" class="btn scroll"><?php echo get_theme_mod('header_btn_texte', 'About Us'); ?></a>
+			<div id="front-img" class="intro">
+				<h1 id="front-titre"><?php echo get_theme_mod('header_titre', 'AngloNormandy Group'); ?></h1>
+				<p id="front-introduction"><?php echo get_theme_mod('header_introduction', 'AngloNormandy Group designs and delivers high impact solutions for quality corporate communications and related, derived, recreational activities, as well as strategic analysis & consultancy.'); ?>	</p>
+				<a id="front-btn" href="#about" class="btn scroll"><?php echo get_theme_mod('header_btn_texte', 'About Us'); ?></a>
 			</div>
 			<!-- /.intro -->
 		
@@ -59,22 +59,22 @@
 	</header>
 
 	<section id="about" class="about-us">
-		<h2 class="title-blanc"><?php echo get_theme_mod('about_titre1', 'About Us'); ?></h1>
-		<h3><?php echo get_theme_mod('about_titre2', 'High impact solutions'); ?></h3>
+		<h2 id="front-about-titre1" class="title-blanc"><?php echo get_theme_mod('about_titre1', 'About Us'); ?></h1>
+		<h3 id="front-about-titre2"><?php echo get_theme_mod('about_titre2', 'High impact solutions'); ?></h3>
 
 		<div class="about-us-contenu">
 			
-			<div class="col">
+			<div id="front-about-colonne1" class="col">
 				<p><?php echo get_theme_mod('about_colonne1', 'We specialise in multidimensional operations with high added value, able to reach and satisfy the most discerning customers and bring our expertise to a wide range of corporate sectors, from the largest multinational brands to very small companies or individuals, and pride ourselves on the quality of our services, always striving for excellence and focusing on achievement.'); ?></p>
 			</div>
 			<!-- /.col -->
 
-			<div class="col">
+			<div id="front-about-colonne2" class="col">
 				<p><?php echo get_theme_mod('about_colonne2', 'Since our creation long time ago we have offered our clients a large range of specialist experience, from the design and production of traditional promotional tools including digital media to the engineering and delivery of complex public relations operations, world-class sport or culture events tailor-made hospitality, private concerts, etc.'); ?></p>
 			</div>
 			<!-- /.col -->
 
-			<div class="col">
+			<div id="front-about-img" class="col">
 				<img src="<?php echo get_theme_mod('about_img', get_bloginfo('template_url').'/img/bateau.jpg'); ?>" alt="AngloNormandy Group" class="img-responsive" title="" />
 			</div>
 			<!-- /.col -->
@@ -84,7 +84,7 @@
 	<!-- /.about-us -->
 
 	<section id="services" class="our-services">
-		<h2 class="title-marron">Spectrum of specialties</h2>
+		<h2 id="front-services-titre" class="title-marron">Spectrum of specialties</h2>
 
 		<div class="our-services-contenu">
 			<div class="encart">

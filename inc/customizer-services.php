@@ -23,6 +23,10 @@
 			'priority' 		=> 1
 		));
 
+		$wp_customize->selective_refresh->add_partial( 'services_titre', array(
+	        'selector' => '#front-services-titre',
+    	) );
+
 		// ENCART 1
 		// ICONE
 		$wp_customize->add_setting('services_encart1_icone', array(
